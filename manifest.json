@@ -1,0 +1,20 @@
+{
+  "name": "Well Log Pro",
+  "short_name": "WellLog",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "icons": [
+    {
+      "src": "/assets/branding/welllogpro_icon_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/branding/welllogpro_icon_512x512.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
