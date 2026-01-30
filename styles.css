@@ -267,7 +267,7 @@ h2{
 }
 
 @media (max-width: 768px){
-  .brand-logo{ height: 52px; } /* still big but fits */
+  .brand-logo{ height: 72px; } /* still big but fits */
   .nav{ display:none; }
   .header-inner{ min-height: 84px; }
   .bullets{ grid-template-columns: 1fr; }
