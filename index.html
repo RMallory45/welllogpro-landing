@@ -4,171 +4,135 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>Well Log Pro — Job logging for well drilling, pump installs, and waterline crews</title>
-  <meta name="description" content="Well Log Pro helps well drilling, pump install, and waterline crews track jobs, materials, and time—fast on mobile, clean for the office." />
+  <title>Well Log Pro — Job logging for well drilling & pump installs</title>
+  <meta name="description" content="Job logs crews actually use. Track jobs, materials, and time for well drilling, pump installs, and waterline crews." />
 
-  <!-- Favicons / App Icons -->
-  <link rel="icon" type="image/png" href="assets/branding/favicon-32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="assets/branding/favicon-16.png" sizes="16x16" />
-  <link rel="apple-touch-icon" href="assets/branding/favicon-192.png" />
-  <link rel="icon" type="image/png" href="assets/branding/favicon-512.png" sizes="512x512" />
-
-  <!-- Social preview (optional but professional) -->
-  <meta property="og:title" content="Well Log Pro" />
-  <meta property="og:description" content="Job logging for well drilling, pump installs, and waterline crews." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/branding/WellLogPro-AppIcon-1024.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon / PWA Icon (USED ONLY by browser + Add to Home Screen, NOT displayed on page) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/branding/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/branding/favicon-16.png" />
+  <link rel="apple-touch-icon" href="assets/branding/favicon-192.png" />
+
+  <!-- PWA -->
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#0b1220" />
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/" aria-label="Well Log Pro Home">
+
+      <!-- Brand -->
+      <a class="brand" href="#top" aria-label="Well Log Pro">
+        <!-- Use your text logo (light/dark handled automatically) -->
         <picture>
-          <source srcset="assets/branding/welllogpro_text_logo_dark.png" media="(prefers-color-scheme: dark)">
-          <img class="brand-logo" src="assets/branding/welllogpro_text_logo_light.png" alt="Well Log Pro" />
+          <source srcset="assets/branding/welllogpro_text_logo_light.png" media="(prefers-color-scheme: dark)">
+          <img
+            class="brand-logo"
+            src="assets/branding/welllogpro_text_logo_dark.png"
+            alt="Well Log Pro"
+            loading="eager"
+            decoding="async"
+          />
         </picture>
       </a>
 
+      <!-- Nav -->
       <nav class="nav" aria-label="Primary">
         <a href="#how">How it works</a>
-        <a href="#who">Who it’s for</a>
+        <a href="#for">Who it’s for</a>
         <a href="#security">Security</a>
       </nav>
 
-      <div class="header-actions">
-        <!-- Keep as a subtle link (not a second button) -->
-        <a class="link" href="https://app.welllogpro.com/login">Log in</a>
+      <!-- Actions -->
+      <div class="actions">
+        <a class="btn ghost" href="https://app.welllogpro.com/login">Log in</a>
         <a class="btn primary" href="start.html">Sign up</a>
       </div>
+
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">Office + Field Job Logging</div>
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <div class="pill">Office + Field Job Logging</div>
+
           <h1>Job logs that crews actually use.</h1>
           <p class="lead">
-            Well Log Pro makes it simple to track jobs, materials, and time for
-            <strong>well drilling</strong>, <strong>pump installs</strong>, and <strong>waterline crews</strong> —
-            fast on mobile, clean for the office.
+            Track jobs, materials, and time for well drilling, pump installs, and waterline crews — fast on mobile, clean for the office.
           </p>
 
           <div class="cta-row">
             <a class="btn primary big" href="start.html">Sign up</a>
-            <a class="btn ghost big" href="https://app.welllogpro.com/login">Log in</a>
+            <a class="btn outline big" href="https://app.welllogpro.com/login">Log in</a>
           </div>
 
-          <div class="trust-row">
-            <div class="trust-pill">Mobile-first</div>
-            <div class="trust-pill">Role-based (Office / Tech)</div>
-            <div class="trust-pill">Clean exports</div>
+          <div class="chips">
+            <span>Mobile-first</span>
+            <span>Role-based (Office / Tech)</span>
+            <span>Clean exports</span>
           </div>
         </div>
 
-        <!-- HERO PANEL (no pricing) -->
-        <div class="hero-card" role="presentation">
-          <div class="hero-card-top">
-            <img
-              class="app-icon"
-              src="assets/branding/WellLogPro-AppIcon-1024.png"
-              alt=""
-              loading="lazy"
-            />
-            <div>
-              <div class="hero-card-title">Built for the jobsite</div>
-              <div class="hero-card-sub">Fast in the field. Organized in the office.</div>
+        <div class="hero-right">
+          <div class="card">
+            <h3>Built for the jobsite</h3>
+            <ul class="checks">
+              <li>Office creates the job and assigns a tech</li>
+              <li>Tech logs materials + time on-site</li>
+              <li>Office reviews + exports for billing</li>
+            </ul>
+            <div class="hint">
+              Tip: On iPhone/Android, use <strong>Add to Home Screen</strong> for one-tap access.
             </div>
-          </div>
-
-          <ul class="checklist">
-            <li>Office creates the job and assigns a tech</li>
-            <li>Tech logs materials + time on-site</li>
-            <li>Office reviews + exports for billing</li>
-          </ul>
-
-          <div class="tip">
-            Tip: On iPhone/Android, use <strong>Add to Home Screen</strong> for one-tap access.
           </div>
         </div>
       </div>
-
-      <div class="hero-bg" aria-hidden="true"></div>
     </section>
 
-    <!-- HOW IT WORKS -->
+    <!-- HOW -->
     <section id="how" class="section">
       <div class="container">
-        <div class="section-head">
-          <h2>How it works</h2>
-          <p>Simple workflow that matches how crews already operate.</p>
-        </div>
+        <h2>How it works</h2>
+        <p class="section-sub">Simple workflow that matches how crews already operate.</p>
 
-        <div class="cards">
-          <article class="card">
-            <div class="card-num">1</div>
+        <div class="grid3">
+          <div class="card step">
+            <div class="step-num">1</div>
             <h3>Office sets the job</h3>
             <p>Create the job, assign a tech, and keep everything in one file.</p>
-          </article>
+          </div>
 
-          <article class="card">
-            <div class="card-num">2</div>
+          <div class="card step">
+            <div class="step-num">2</div>
             <h3>Tech updates on-site</h3>
-            <p>Log work, materials, and timestamps from the phone—right at the well.</p>
-          </article>
+            <p>Log work, materials, and timestamps from the phone — right at the well.</p>
+          </div>
 
-          <article class="card">
-            <div class="card-num">3</div>
+          <div class="card step">
+            <div class="step-num">3</div>
             <h3>Office reviews & exports</h3>
             <p>Clear history and reporting for billing, records, and follow-ups.</p>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- WHO IT'S FOR -->
-    <section id="who" class="section alt">
-      <div class="container who-grid">
-        <div>
-          <div class="section-head tight">
-            <h2>Who it’s for</h2>
-            <p>Designed specifically for the well & pump trade.</p>
-          </div>
+    <!-- WHO -->
+    <section id="for" class="section section-alt">
+      <div class="container">
+        <h2>Who it’s for</h2>
 
-          <div class="who-list">
-            <div class="who-item">✅ Well drilling companies</div>
-            <div class="who-item">✅ Pump installers</div>
-            <div class="who-item">✅ Waterline crews</div>
-            <div class="who-item">✅ Office + field teams</div>
-          </div>
-        </div>
-
-        <div class="feature-panel">
-          <h3>What you get</h3>
-          <div class="feature-grid">
-            <div class="feature">
-              <div class="feature-title">Faster job notes</div>
-              <div class="feature-text">Less texting, fewer lost details, better job history.</div>
-            </div>
-            <div class="feature">
-              <div class="feature-title">Cleaner billing</div>
-              <div class="feature-text">Materials and time are captured where the work happens.</div>
-            </div>
-            <div class="feature">
-              <div class="feature-title">Office/Tech separation</div>
-              <div class="feature-text">Role-based access helps keep info consistent.</div>
-            </div>
-            <div class="feature">
-              <div class="feature-title">Works great on phones</div>
-              <div class="feature-text">Built to feel fast and simple on mobile.</div>
-            </div>
-          </div>
+        <div class="bullets">
+          <div>✅ Well drilling companies</div>
+          <div>✅ Pump installers</div>
+          <div>✅ Waterline crews</div>
+          <div>✅ Office + field teams</div>
         </div>
       </div>
     </section>
@@ -176,50 +140,28 @@
     <!-- SECURITY -->
     <section id="security" class="section">
       <div class="container">
-        <div class="section-head">
-          <h2>Security & reliability</h2>
-          <p>Professional-grade access control built for real crews and real data.</p>
-        </div>
-
-        <div class="security-grid">
-          <div class="security-card">
+        <h2>Security</h2>
+        <div class="grid2">
+          <div class="card">
             <h3>Role-based access</h3>
-            <p>Office and Tech views are separated to reduce mistakes and protect data.</p>
+            <p>Office and Tech permissions keep the right controls in the right hands.</p>
           </div>
-          <div class="security-card">
-            <h3>Cloud mode</h3>
-            <p>Sync jobs and access assigned work from anywhere.</p>
+          <div class="card">
+            <h3>Cloud sync</h3>
+            <p>Sign in and access assigned jobs across devices without messy spreadsheets.</p>
           </div>
-          <div class="security-card">
-            <h3>Fast onboarding</h3>
-            <p>Create an account and start testing your workflow immediately.</p>
-          </div>
-        </div>
-
-        <div class="final-cta">
-          <div class="final-cta-copy">
-            <h2>Ready to try it?</h2>
-            <p>Create an account and start logging jobs today.</p>
-          </div>
-          <a class="btn primary big" href="start.html">Sign up</a>
         </div>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer-inner">
-        <div class="footer-left">
-          <picture>
-            <source srcset="assets/branding/welllogpro_text_logo_dark.png" media="(prefers-color-scheme: dark)">
-            <img class="footer-logo" src="assets/branding/welllogpro_text_logo_light.png" alt="Well Log Pro" />
-          </picture>
-          <div class="footer-note">© <span id="y"></span> Well Log Pro</div>
-        </div>
-
+        <div>© <span id="y"></span> Well Log Pro</div>
         <div class="footer-links">
           <a href="privacy.html">Privacy</a>
           <a href="terms.html">Terms</a>
-          <a href="https://app.welllogpro.com/login">Log in</a>
+          <a href="https://app.welllogpro.com/login">Login</a>
         </div>
       </div>
     </footer>
