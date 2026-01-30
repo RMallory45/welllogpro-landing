@@ -78,7 +78,7 @@ a{ color: inherit; text-decoration: none; }
 
 .brand-logo{
   /* 🚨 MANDATORY BIG LOGO 🚨 */
-  height: 120px;
+  height: 240px;
   width: auto;
   max-width: none;
   display: block;
