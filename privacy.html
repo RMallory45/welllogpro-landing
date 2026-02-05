@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Well Log Pro</title>
+  <meta name="description" content="Privacy Policy for Well Log Pro." />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0b1c2f" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="Well Log Pro home">
+        <img src="assets/branding/welllogpro_text_logo_dark.png" alt="Well Log Pro" class="brand-logo" />
+      </a>
+      <div class="nav-actions">
+        <a class="nav-link muted" href="https://app.welllogpro.com/login">Log in</a>
+        <a class="btn primary" href="https://app.welllogpro.com/login?mode=signup">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="section-sub">Last updated: <span id="d"></span></p>
+
+      <div class="card">
+        <p>
+          Well Log Pro (“we”, “us”) collects and stores account and job data you enter into the app
+          for the purpose of providing job logging, reporting, and export features.
+        </p>
+
+        <h3>What we collect</h3>
+        <ul>
+          <li>Account information (name, email)</li>
+          <li>Job records you create (customer/job details, notes, materials, time logs)</li>
+        </ul>
+
+        <h3>How we use data</h3>
+        <ul>
+          <li>To provide and improve the service</li>
+          <li>To secure accounts and prevent abuse</li>
+          <li>To support customers when requested</li>
+        </ul>
+
+        <h3>Data sharing</h3>
+        <p>We do not sell your data. We only share data with service providers needed to run the app (hosting, database, etc.).</p>
+
+        <h3>Contact</h3>
+        <p>If you have privacy questions, contact: <b>contact@welllogpro.com</b> (or replace with your preferred email).</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="container foot-inner">
+      <div>© <span id="y"></span> Well Log Pro</div>
+      <div class="links">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="https://app.welllogpro.com/login">Login</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("d").textContent = new Date().toISOString().split("T")[0];
+  </script>
+</body>
+</html>
