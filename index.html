@@ -12,11 +12,12 @@
 
   <!-- Optional: Apple PWA -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 </head>
 
 <body>
-  <!-- HEADER (LOGO ONLY — NO ICON) -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="brand" aria-label="Well Log Pro home">
@@ -35,7 +36,7 @@
 
       <div class="nav-actions">
         <a class="nav-link muted" href="https://app.welllogpro.com/login">Log in</a>
-        <a class="btn primary" href="https://app.welllogpro.com/login?mode=signup">Sign up</a>
+        <a class="btn primary" href="https://app.welllogpro.com/signup">Sign up</a>
       </div>
     </div>
   </header>
@@ -54,14 +55,14 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn primary big" href="https://app.welllogpro.com/login?mode=signup">Sign up</a>
+            <a class="btn primary big" href="https://app.welllogpro.com/signup">Start free trial</a>
             <a class="btn outline big" href="https://app.welllogpro.com/login">Log in</a>
           </div>
 
           <div class="chips">
-            <span>Mobile-first</span>
+            <span>14-day free trial (Monthly)</span>
+            <span>Yearly available (no trial)</span>
             <span>Role-based (Office / Tech)</span>
-            <span>Clean exports</span>
           </div>
         </div>
 
@@ -130,7 +131,7 @@
             <p>Office and Tech accounts see only what they should.</p>
           </div>
           <div class="card">
-            <div>Cloud-ready</div>
+            <h3>Cloud-ready</h3>
             <p>Your jobs are backed up and accessible from phone or desktop.</p>
           </div>
         </div>
@@ -153,5 +154,16 @@
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
+
+  <!-- Small fallback styling for classes used in the HTML (safe even if styles.css covers them) -->
+  <style>
+    .muted { opacity: 0.85; }
+    .hint { font-size: 13px; line-height: 1.5; opacity: 0.85; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 12px; }
+    .links { display:flex; gap:14px; flex-wrap:wrap; }
+    .section.alt { background: rgba(255,255,255,0.02); }
+    .bullets { display:grid; gap:10px; margin-top:14px; color: rgba(234,242,255,0.85); }
+    .grid2 { display:grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    @media (max-width: 768px){ .grid2 { grid-template-columns: 1fr; } }
+  </style>
 </body>
 </html>
